@@ -1,10 +1,10 @@
-import { routes } from "../../../routes";
+import { sidebarRoutes } from "../../sidebarRoutes";
 import { NavItem } from "./NavItem";
 
 export const Navbar = () => {
   return (
     <nav className="flex flex-col gap-1">
-      {routes.map((route, index) => {
+      {sidebarRoutes.map((route, index) => {
         return (
           <NavItem
             key={index}
